@@ -43,7 +43,8 @@ jobs:
           script: |
             set -eux
 
-            mkdir -p ~/Notes_project
+            rm -rf ~/Notes_project
+            git clone https://github.com/raynowww/Notes_project ~/Notes_project
             cd ~/Notes_project
 
             if [ ! -d ".git" ]; then
