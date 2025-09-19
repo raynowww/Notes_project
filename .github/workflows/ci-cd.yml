@@ -55,14 +55,6 @@ jobs:
             echo "${{ secrets.ENV_FILE }}" | base64 -d > .env
             chmod 600 .env
 
-            # --- DEBUG: вывод состояния на сервере ---
-            echo "PWD: $(pwd)"
-            ls -la
-            echo "ENV_FILE:"
-            cat .env
-            docker compose ps
-            # -------------------------
-
             docker compose pull
             docker compose up -d --remove-orphans
             docker compose ps
