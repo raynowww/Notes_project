@@ -1,4 +1,4 @@
-📝 Notes Project  
+## 📝 Notes Project  
 
 Notes Project — приложение для заметок на Django (backend) + Vue 3 (frontend) с использованием PostgreSQL, Nginx и Docker Compose.  
 
