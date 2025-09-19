@@ -57,5 +57,6 @@ jobs:
             chmod 600 .env
 
             docker compose pull
+            docker compose down --remove-orphans || true
             docker compose up -d --remove-orphans
             docker compose ps
